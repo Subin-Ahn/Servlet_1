@@ -18,6 +18,8 @@ public class BoardDAO {
 		ArrayList<BoardDTO> ar = new ArrayList<BoardDTO>();
 		Connection con = dbConnecter.getConnect();
 		
+		
+		
 		String sql = "select * from board order by num desc";
 		PreparedStatement st = con.prepareStatement(sql);
 		
